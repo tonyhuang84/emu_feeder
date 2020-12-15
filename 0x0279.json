@@ -1,0 +1,27 @@
+{
+    "eoj": "0279",
+    "instance_number": "01",
+     "description": {
+        "device_type": "household solar power generation",
+        "manufacturer": "Omron",
+        "product_model": "KP-MU1P-SET",
+        "product_link": "https://socialsolution.omron.com/jp/ja/products_service/energy/product/monitor/kp-mu1p.html",
+        "ndeclite_agent_get_epc": "0xE0, 0xE1, 0xE3"
+    },
+    "schedule": [
+        {
+            "property": {
+                "ins_gen_Wh": [2000, 3500],
+                "ins_sold_Wh_percent": 0.8,
+                "duration_sec": 60,
+                "duration_ratio": 1,
+                "gen_power_period": [8, 17],
+                "timezone_offset": 8
+            },
+            "task_proc": {
+                "module": "0x0279_task",
+                "function": "operate"
+            }
+        }
+    ]
+}

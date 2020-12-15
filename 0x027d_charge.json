@@ -1,0 +1,34 @@
+{
+    "eoj": "027D",
+    "instance_number": "01",
+    "operation_mode_setting": {
+        "epc": "DA",
+        "value": "42"
+    },
+    "working_operation_status": {
+        "epc": "CF",
+        "value": "42"
+    },
+    "description": {
+        "device_type": "storage battery",
+        "manufacturer": "Sharp",
+        "product_model": "JH-WB1921",
+        "product_link": "https://jp.sharp/e_solution/battery/newsystem/images/battery_newsystem.pdf"
+    },
+    "schedule": [
+        {
+            "property": {
+                "operation_mode": "Charging",
+                "cap_Wh": 6500,
+                "chg_Wh": 1625,
+                "voltage": 200,
+                "duration_sec": 100,
+                "duration_ratio": 1
+            },
+            "task_proc": {
+                "module": "0x027d_task",
+                "function": "operate"
+            }
+        }
+    ]
+}
